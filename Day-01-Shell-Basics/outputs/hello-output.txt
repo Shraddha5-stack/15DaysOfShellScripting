@@ -1,0 +1,5 @@
+======================================
+Hello, World!
+Welcome to Day 1 of Shell Scripting
+Created by Shraddha Wankhade
+======================================

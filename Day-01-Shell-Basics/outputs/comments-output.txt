@@ -1,0 +1,1 @@
+This script demonstrates the use of comments in Bash.
