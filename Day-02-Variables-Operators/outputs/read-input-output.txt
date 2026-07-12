@@ -1,0 +1,11 @@
+=======================================
+      Student Information Form
+=======================================
+
+========== Student Details ==========
+Name      : mrunal
+Age       : 24
+City      : chennai
+Language  : python
+=====================================
+Thank you for providing your details!

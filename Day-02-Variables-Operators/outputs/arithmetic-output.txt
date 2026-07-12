@@ -1,0 +1,10 @@
+========== Arithmetic Operations ==========
+First Number  : 20
+Second Number : 5
+
+Addition       : 25
+Subtraction    : 15
+Multiplication : 100
+Division       : 4
+Modulus        : 0
+===========================================

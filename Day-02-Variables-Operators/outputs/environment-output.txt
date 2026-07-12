@@ -1,0 +1,8 @@
+========== Environment Variables ==========
+User Name              : shraddha
+Home Directory         : /home/shraddha
+Present Working Dir    : /home/shraddha/15DaysOfShellScripting/Day-02-Variables-Operators/outputs
+Shell                  : /bin/bash
+Hostname               : shraddha-HP-Laptop-15s-fr4xxx
+PATH                   : /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+===========================================

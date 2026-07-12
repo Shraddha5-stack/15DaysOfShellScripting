@@ -1,0 +1,6 @@
+========== Student Information ==========
+Name       : Shraddha
+City       : Pune
+Course     : Shell Scripting
+Experience : Beginner
+=========================================

@@ -1,0 +1,12 @@
+======================================
+        Simple Bash Calculator
+======================================
+
+========== Results ==========
+Addition       : 29
+Subtraction    : 19
+Multiplication : 120
+Division       : 4
+Modulus        : 4
+=============================
+Calculation Completed!
