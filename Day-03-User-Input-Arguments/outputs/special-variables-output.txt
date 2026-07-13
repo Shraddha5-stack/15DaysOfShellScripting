@@ -1,0 +1,15 @@
+==========================================
+       Bash Special Variables Demo
+==========================================
+Script Name               : ../scripts/special-variables.sh
+First Argument            : Shraddha
+Second Argument           : Nagpur
+Third Argument            : DevOps
+
+Number of Arguments ($#) : 3
+All Arguments ($@)       : Shraddha Nagpur DevOps
+Current Process ID ($$)  : 14684
+
+==========================================
+Execution Completed Successfully
+==========================================

@@ -1,0 +1,11 @@
+=======================================
+      Student Registration Form
+=======================================
+
+========== Student Details ==========
+Name      : shraddha wankhade
+Age       : 25
+City      : mumbai
+Course    : devops
+College   : mgms
+=====================================

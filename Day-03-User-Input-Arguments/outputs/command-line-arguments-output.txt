@@ -1,0 +1,13 @@
+=========================================
+    Command Line Arguments Example
+=========================================
+Script Name      : ../scripts/command-line-arguments.sh
+First Argument   : Shraddha
+Second Argument  : Nagpur
+Third Argument   : DevOps
+
+========== Student Information ==========
+Name   : Shraddha
+City   : Nagpur
+Course : DevOps
+=========================================
