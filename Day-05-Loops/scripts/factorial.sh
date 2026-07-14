@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Day 05 - Factorial of a Number
+
+echo "Enter a number:"
+read number
+
+factorial=1
+
+for ((i=1; i<=number; i++))
+do
+    factorial=$((factorial * i))
+done
+
+echo ""
+echo "Factorial of $number is: $factorial"
