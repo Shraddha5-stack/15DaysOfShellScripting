@@ -1,123 +1,156 @@
-# Day 04 – Practice Exercises
+# Exercise 1 – if Statement
 
-## Exercise 1 – Positive, Negative or Zero
+## Script
 
-Write a Bash script that:
+```bash
+#!/bin/bash
 
-- Accepts a number.
-- Prints whether it is:
-  - Positive
-  - Negative
-  - Zero
+read -p "Enter your age: " AGE
 
----
+if [ "$AGE" -ge 18 ]
+then
+    echo "Eligible to Vote"
+fi
+```
 
-## Exercise 2 – Even or Odd
+## Script Screenshot
 
-Write a script that:
+![if Statement Script](screenshots/if-statement-script.png)
 
-- Accepts a number.
-- Prints whether it is Even or Odd.
+## Output Screenshot
 
----
-
-## Exercise 3 – Age Category
-
-Write a script that:
-
-- Accepts a person's age.
-- Displays:
-  - Child (0–12)
-  - Teenager (13–19)
-  - Adult (20–59)
-  - Senior Citizen (60 and above)
+![if Statement Output](screenshots/if-statement-output.png)
 
 ---
 
-## Exercise 4 – Grade Calculator
+# Exercise 2 – if-else Statement
 
-Write a script that:
+## Script
 
-- Accepts marks (0–100).
-- Displays the grade:
+```bash
+#!/bin/bash
 
-| Marks | Grade |
-|--------|-------|
-| 90–100 | A+ |
-| 80–89 | A |
-| 70–79 | B |
-| 60–69 | C |
-| 50–59 | D |
-| Below 50 | F |
+read -p "Enter your age: " AGE
 
----
+if [ "$AGE" -ge 18 ]
+then
+    echo "Eligible to Vote"
+else
+    echo "Not Eligible to Vote"
+fi
+```
 
-## Exercise 5 – File or Directory
+## Script Screenshot
 
-Write a script that:
+![if-else Script](screenshots/if-else-script.png)
 
-- Accepts a path.
-- Checks whether it is:
-  - A file
-  - A directory
-  - Does not exist
+## Output Screenshot
+
+![if-else Output](screenshots/if-else-output.png)
 
 ---
 
-## Exercise 6 – Login System
+# Exercise 3 – elif Ladder
 
-Create a script that:
+## Script
 
-- Accepts username and password.
-- Grants access only if both are correct.
+```bash
+#!/bin/bash
 
----
+read -p "Enter Marks: " MARKS
 
-## Exercise 7 – Menu Using case
+if [ "$MARKS" -ge 90 ]
+then
+    echo "Grade A+"
+elif [ "$MARKS" -ge 80 ]
+then
+    echo "Grade A"
+elif [ "$MARKS" -ge 70 ]
+then
+    echo "Grade B"
+else
+    echo "Grade C"
+fi
+```
 
-Create a menu with the following options:
+## Script Screenshot
 
-1. Display Date
-2. Display Current Directory
-3. Display Logged-in User
-4. Display Calendar
-5. Exit
+![elif Ladder Script](screenshots/elif-ladder-script.png)
 
-Use the `case` statement to execute the selected option.
+## Output Screenshot
 
----
-
-## Exercise 8 – Largest Number
-
-Write a script that accepts three numbers and displays the largest one.
-
----
-
-## Exercise 9 – Leap Year Checker
-
-Write a script that checks whether a given year is a leap year.
+![elif Ladder Output](screenshots/elif-ladder-output.png)
 
 ---
 
-## Exercise 10 – Password Strength
+# Exercise 4 – Nested if
 
-Write a script that:
+## Script
 
-- Accepts a password.
-- Checks whether its length is at least 8 characters.
-- Prints:
-  - Strong Password
-  - Weak Password
+```bash
+#!/bin/bash
+
+read -p "Username: " USER
+
+read -sp "Password: " PASS
+echo
+
+if [ "$USER" = "admin" ]
+then
+    if [ "$PASS" = "admin123" ]
+    then
+        echo "Login Successful"
+    else
+        echo "Wrong Password"
+    fi
+else
+    echo "Invalid User"
+fi
+```
+
+## Script Screenshot
+
+![Nested if Script](screenshots/nested-if-script.png)
+
+## Output Screenshot
+
+![Nested if Output](screenshots/nested-if-output.png)
 
 ---
 
-## Practice Goal
+# Exercise 5 – Case Statement
 
-After completing these exercises, I will be able to:
+## Script
 
-- Use `if`, `if-else`, and `if-elif-else`
-- Write nested conditional statements
-- Use the `case` statement effectively
-- Perform numeric, string, and file comparisons
-- Build interactive Bash scripts
+```bash
+#!/bin/bash
 
+echo "1. Date"
+echo "2. Current Directory"
+echo "3. Logged-in User"
+
+read -p "Enter Choice: " CHOICE
+
+case $CHOICE in
+1)
+    date
+    ;;
+2)
+    pwd
+    ;;
+3)
+    whoami
+    ;;
+*)
+    echo "Invalid Choice"
+    ;;
+esac
+```
+
+## Script Screenshot
+
+![Case Statement Script](screenshots/case-statement-script.png)
+
+## Output Screenshot
+
+![Case Statement Output](screenshots/case-statement-output.png)
